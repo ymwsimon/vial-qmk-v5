@@ -8,12 +8,12 @@ import sys
 def main():
     keymaps = defaultdict(set)
 
-    keyboard = hhkb/yang
-    keymap = vial
+    keyboard = "hhkb/yang"
+    keymap = "vial"
     keymaps[keyboard].add("default")
     keymaps[keyboard].add(keymap)
-    keyboard = hhkb/ansi
-    keymap = vial
+    keyboard = "hhkb/ansi"
+    keymap = "vial"
     keymaps[keyboard].add("default")
     keymaps[keyboard].add(keymap)
 
