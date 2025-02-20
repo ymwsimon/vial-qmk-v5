@@ -8,11 +8,14 @@ import sys
 def main():
     keymaps = defaultdict(set)
 
-    for filename in glob("keyboards/**/vial.json", recursive=True):
-        filename = filename[10:-10]
-        keyboard, keymap = filename.split("/keymaps/")
-        keymaps[keyboard].add("default")
-        keymaps[keyboard].add(keymap)
+    keyboard = hhkb/yang
+    keymap = vial
+    keymaps[keyboard].add("default")
+    keymaps[keyboard].add(keymap)
+    keyboard = hhkb/ansi
+    keymap = vial
+    keymaps[keyboard].add("default")
+    keymaps[keyboard].add(keymap)
 
     failed = False
     for keyboard, keymaps in keymaps.items():
